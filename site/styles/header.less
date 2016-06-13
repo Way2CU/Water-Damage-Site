@@ -7,5 +7,101 @@
  */
 
 header {
-  
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 1000000;
+}
+
+header h1 {
+  color: @color_purple;
+}
+
+header a.phone {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.75em;
+  transition: all 0.3s;
+}
+
+header a.phone {
+  right: calc(~'(50% - 600px)');
+  text-decoration: none;
+  color: @color_purple;
+  font-size: 1.5em;
+}
+
+header a.phone svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  fill: @color_green;
+  transition: all 0.3s;
+}
+
+/**
+ * Main menu
+ */
+nav#main {
+  position: absolute;
+  top: 0;
+  left: calc(~'50% - 600px');
+}
+
+nav#main > svg {
+  width: 2em;
+  height: 2em;
+  padding: 1.5em;
+  transition: all 0.3s;
+}
+
+nav#main:hover > svg {
+  background-color: fade(@color_black, 80%);
+  fill: @color_white;
+}
+
+nav#main > nav {
+  position: absolute;
+  width: 300px;
+  text-align: left;
+  top: 5em;
+  left: 0;
+  padding: 0.5em;
+  max-height: 0px;
+  opacity: 0;
+  transition: all 0.4s;
+  transition-delay: 0.3s;
+  visibility: hidden;
+  background-color: fade(@color_black, 80%);
+  z-index: 1000;
+}
+
+nav#main:hover > nav {
+  opacity: 1;
+  max-height: 500px;
+  visibility: visible;
+}
+
+nav#main a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: @color_white;
+  border-bottom: 1px solid fade(@color_white, 20%);
+  transition: all 0.3s;
+}
+
+nav#main a:hover {
+  background-color: @color_white;
+  color: @color_black;
+}
+
+nav#main a:last-of-type {
+  border-bottom: none;
 }

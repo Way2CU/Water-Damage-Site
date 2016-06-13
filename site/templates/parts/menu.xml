@@ -1,0 +1,28 @@
+<document>
+  <nav>
+    <a href="#water">
+      <cms:text constant="menu_water"/>
+    </a>
+    <a href="#commercial">
+      <cms:text constant="menu_commercial"/>
+    </a>
+    <a href="#contents">
+      <cms:text constant="menu_contents"/>
+    </a>
+    <a href="#fire">
+      <cms:text constant="menu_fire_damage"/>
+    </a>
+    <a href="#sprinklers">
+      <cms:text constant="menu_sprinklers"/>
+    </a>
+    <a href="#mold">
+      <cms:text constant="menu_mold"/>
+    </a>
+    <a href="#repair">
+      <cms:text constant="menu_repair"/>
+    </a>
+    <a href="#storm">
+      <cms:text constant="menu_storm"/>
+    </a>
+  </nav>
+</document>

@@ -1,0 +1,5 @@
+<document>
+  <li>
+    <cms:var param="title" multilanguage="yes"/>
+  </li>
+</document>

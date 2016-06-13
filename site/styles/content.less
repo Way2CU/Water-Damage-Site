@@ -1,0 +1,231 @@
+/**
+ * Main Style Sheet
+ * Pro Serv Site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+section {
+  padding: 40px calc(~'(100% - 1200px)' / 2);
+  text-align: center;
+}
+
+section#intro {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: 
+      linear-gradient(180deg, rgba(49,56,89,0) 70%,rgba(49,56,89,1) 100%),
+      url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+  background-size: 100% auto, 1920px 1000px;
+  min-height: 960px;
+  position: relative;
+}
+
+section#intro article {
+  padding-top: 150px;
+  color: @color_white;
+}
+
+section#intro article h2 {
+  font-size: 3em;
+  padding-bottom: 100px;
+  text-shadow: 0px 0px 3px fade(@color_black, 50%);
+}
+
+section#intro article strong {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-shadow: 0px 0px 3px fade(@color_black, 50%);
+}
+
+section#intro article p {
+  font-size: 1.3em;
+  text-shadow: 0px 0px 3px fade(@color_black, 50%);
+}
+
+section#about article.about,
+section#about article.specialize {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+  color: @color_purple;
+  text-align: left;
+}
+
+section#about article.about {
+  width: 70%;
+}
+
+section#about article.about p:first-of-type {
+  margin-top: 0;
+}
+
+section#about article.specialize {
+  width: 30%;
+}
+
+section#about article.specialize h4 {
+  margin-top: 0;
+  color: @color_blue;
+}
+
+section#about article.specialize ul {
+  margin: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+section#intro div.form_wrap {
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  right: 0;
+  color: @color_white;
+}
+
+section#intro div.form_wrap h4 {
+  margin-bottom: 0;
+}
+
+section#intro div.form_wrap form {
+  padding: 1em;
+}
+
+section#intro div.form_wrap form label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  position: relative;
+}
+
+section#intro div.form_wrap form label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/form-icons.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 200px 50px;
+  width: 50px;
+  height: 50px;
+}
+
+section#intro div.form_wrap form label:nth-of-type(1):before {
+  background-position: -100px 0px;
+}
+
+section#intro div.form_wrap form label:nth-of-type(2):before {
+  background-position: -50px 0px;
+}
+
+section#intro div.form_wrap form label span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.2em; 
+}
+
+section#intro div.form_wrap form label input {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  border: 1px solid @color_white;
+  transition: all 0.3s;
+}
+
+section#intro div.form_wrap form label input:hover {
+  border: 1px solid fade(@color_green, 50%);
+}
+
+section#intro div.form_wrap form label input:focus {
+  border: 1px solid @color_green;
+}
+
+section#intro div.form_wrap form div.controls {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+section#intro div.form_wrap form div.controls button {
+  display: inline-block;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
+  border: 1px solid transparent;
+  color: @color_white;
+  background-color: fade(@color_green, 30%);
+  transition: all 0.3s
+}
+
+section#intro div.form_wrap form div.controls button:hover {
+  background-color: @color_green;
+}
+
+/**
+ * Features
+ */
+
+ul#features {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul#features li {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4em;
+  position: relative;
+  width: 25%;
+}
+
+ul#features li:before {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+  content: "";
+  background-image: url(../images/feature-icons.svg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 600px 200px;
+  width: 150px;
+  height: 100px;
+}
+
+ul#features li:nth-of-type(2):before {
+  background-position: -150px 0px;
+}
+
+ul#features li:nth-of-type(3):before {
+  background-position: -300px 0px;
+}
+
+ul#features li:nth-of-type(4):before {
+  background-position: -450px 0px;
+}
+
+ul#features li:nth-of-type(5):before {
+  background-position: 0px -100px;
+}
+
+ul#features li:nth-of-type(6):before {
+  background-position: -150px -100px;
+}
+
+ul#features li:nth-of-type(7):before {
+  background-position: -300px -100px;
+}
+
+ul#features li:nth-of-type(8):before {
+  background-position: -450px -100px;
+}

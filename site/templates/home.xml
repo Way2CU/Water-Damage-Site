@@ -11,6 +11,53 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<!-- Top section of the site -->
 			<cms:template file="parts/header.xml"/>
+			<section id="intro">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="intro"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+
+				<div class="form_wrap">
+					<h4><cms:text constant="title_form"/></h4>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+				</div>
+			</section>
+
+			<!-- Features section -->
+			<section id="about">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="specialize"
+					template="stock/article_generic.xml"
+					>
+					<param name="class" value=""/>
+				</cms:module>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="about"
+					template="stock/article_generic.xml"
+					>
+					<param name="class" value=""/>
+				</cms:module>
+				<ul id="features">
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features"
+						template="parts/features.xml"
+						/>
+				</ul>
+			</section>
 		</body>
 	</html>
 </document>
