@@ -1,10 +1,10 @@
 ---
 site:
-  domain: sample.com
+  domain: Proserv.expert
   # subdomain: test
   # alias: domain.com
   root: httpdocs
-  username: sample
+  username: proserv
   caracal_branch: develop
   # ip_address: 0.0.0.0
   # owner: Some Person
