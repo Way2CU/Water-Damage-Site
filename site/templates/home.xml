@@ -150,6 +150,19 @@
 			<footer>
 				<div class="top">
 					<h2><cms:text constant="site_title"/></h2>
+					<cms:desktop>
+						<div class="form_wrap">
+							<h4><cms:text constant="title_form"/></h4>
+							<cms:module
+								name="contact_form"
+								action="show"
+								text_id="contact"
+								/>
+							<p><cms:text constant="footer_note"/></p>
+						</div>
+					</cms:desktop>
+				</div>
+				<cms:mobile>
 					<div class="form_wrap">
 						<h4><cms:text constant="title_form"/></h4>
 						<cms:module
@@ -159,7 +172,7 @@
 							/>
 						<p><cms:text constant="footer_note"/></p>
 					</div>
-				</div>
+				</cms:mobile>
 				<cms:template file="stock/copyright.xml">
 					<param name="holder" value="copyright_holder"/>
 					<param name="text" value="copyright_text"/>
