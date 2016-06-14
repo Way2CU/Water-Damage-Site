@@ -1,5 +1,5 @@
 <document>
-  <nav>
+  <nav class="mobile_menu">
     <a href="#water">
       <cms:text constant="menu_water"/>
     </a>

@@ -1,0 +1,74 @@
+/**
+ * Header mobile Style Sheet
+ * Pro Serv Site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+  display: block;
+}
+
+div.mobile_title {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  background-color: transparent;
+  text-align: center;
+}
+
+div.mobile_title h1 {
+  display: inline-block;
+  font-size: 1.3em;
+  color: @color_purple;
+}
+
+div.mobile_title a.phone,
+div.mobile_title a.menu {
+  display: inline-block;
+  position: absolute;
+  padding: 1em;
+  left: -1em;
+  top: 50%;
+  margin-top: -2.15em;
+  transition: all 0.3s;
+}
+
+div.mobile_title.visible a.menu {
+  left: -2em;
+}
+
+div.mobile_title a.phone {
+  right: -10px;
+  left: auto;
+}
+
+div.mobile_title a.phone svg,
+div.mobile_title a.menu svg {
+  width: 2.5em;
+  height: 2.5em;
+  fill: @color_purple;
+}
+
+div.mobile_title a.phone svg {
+  fill: @color_green;
+}
+
+nav.mobile_menu {
+  overflow-y: scroll;
+  width: 100%;
+  left: -100%;
+}
+
+nav.mobile_menu.visible {
+  width: 100%;
+  background-color: fade(@color_black, 90%);
+}
+
+nav.mobile_menu a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: @color_white;
+  border-bottom: 1px solid fade(@color_white, 20%);
+}
