@@ -1,5 +1,7 @@
 <document>
   <li>
-    <cms:var param="title" multilanguage="yes"/>
+    <a href="'#'.$params['text_id']" cms:eval="href">
+      <cms:var param="title" multilanguage="yes"/>
+    </a>
   </li>
 </document>

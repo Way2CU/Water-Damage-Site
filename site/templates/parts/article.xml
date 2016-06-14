@@ -1,0 +1,36 @@
+<document>
+  <cms:if condition="isset($template['background_image'])">
+    <article 
+      id="$params['text_id']"
+      class="thumbnail"
+      style="'background-image: url('.gallery::getThumbnailById( null, $params['text_id'], 10, Thumbnail::CONSTRAIN_HEIGHT).');'"
+      cms:eval="style,id">
+
+      <cms:module
+        name="gallery"
+        action="show_image"
+        text_id="$params['text_id']"
+        template="parts/article_image.xml"
+        cms:eval="text_id"
+        />
+
+        <h2><cms:var param="title" multilanguage="yes"/></h2>
+        <cms:markdown param="content" multilanguage="yes"/>
+    </article>
+  </cms:if>
+
+  <cms:if condition="!isset($template['background_image'])">
+    <article id="$params['text_id']" cms:eval="id">
+      <cms:module
+        name="gallery"
+        action="show_image"
+        text_id="$params['text_id']"
+        template="parts/article_image.xml"
+        cms:eval="text_id"
+        />
+
+        <h2><cms:var param="title" multilanguage="yes"/></h2>
+        <cms:markdown param="content" multilanguage="yes"/>
+    </article>
+  </cms:if>
+</document>
