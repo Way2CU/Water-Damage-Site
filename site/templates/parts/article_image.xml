@@ -1,8 +1,19 @@
 <document>
-  <a class="lightbox" href="$params['image']" cms:eval="href">
-    <img 
-      src="gallery::getThumbnailById($params['id'], null, 450, Thumbnail::CONSTRAIN_BOTH);"
-      alt="$params['title'][$language]" 
-      cms:eval="src,alt"/>
-  </a>
+  <cms:desktop>
+    <a class="lightbox" href="$params['image']" cms:eval="href">
+      <img 
+        src="gallery::getThumbnailById($params['id'], null, 450, Thumbnail::CONSTRAIN_BOTH);"
+        alt="$params['title'][$language]" 
+        cms:eval="src,alt"/>
+    </a>
+  </cms:desktop>
+
+  <cms:mobile>
+    <a class="lightbox" href="$params['image']" cms:eval="href">
+      <img 
+        src="gallery::getThumbnailById($params['id'], null, 300, Thumbnail::CONSTRAIN_HEIGHT);"
+        alt="$params['title'][$language]" 
+        cms:eval="src,alt"/>
+    </a>
+  </cms:mobile>
 </document>

@@ -22,7 +22,19 @@
 					>
 					<param name="title" value=""/>
 				</cms:module>
+				<cms:desktop>
+					<div class="form_wrap">
+						<h4><cms:text constant="title_form"/></h4>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+					</div>
+				</cms:desktop>
+			</section>
 
+			<cms:mobile>
 				<div class="form_wrap">
 					<h4><cms:text constant="title_form"/></h4>
 					<cms:module
@@ -31,7 +43,7 @@
 						text_id="contact"
 						/>
 				</div>
-			</section>
+			</cms:mobile>
 
 			<!-- Features section -->
 			<section id="about">
