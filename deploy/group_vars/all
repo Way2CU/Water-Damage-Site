@@ -1,6 +1,6 @@
 ---
 site:
-  domain: Proserv.expert
+  domain: proserv.expert
   # subdomain: test
   # alias: domain.com
   root: httpdocs
