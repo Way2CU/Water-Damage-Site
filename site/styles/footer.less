@@ -1,0 +1,42 @@
+/**
+ * Footer Style Sheet
+ * Pro Serv Site
+ *
+ * Copyright (c) 2016. by Way2CU, http://way2cu.com
+ * Authors: Tal Reznic
+ */
+footer {
+  display: block;
+  background-color: @color_black;
+  text-align: center;
+  position: relative;
+}
+
+footer div.top {
+  background-image: 
+      linear-gradient(180deg, fade(@color_black, 0%) 60%, @color_black 100%),
+      url(../images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+  background-size: 100% auto, 1920px 700px;
+  min-height: 700px;
+  position: relative;
+}
+
+footer h2 {
+  font-size: 3em;
+  color: @color_purple;
+}
+
+/**
+ * Copyright
+ */
+
+footer div.copyright {
+  display: inline-block;
+  color: @color_white;
+}
+
+footer div.copyright a {
+  color: @color_white;
+}
