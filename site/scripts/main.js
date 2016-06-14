@@ -51,6 +51,10 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+		// create lightbox images for articles images
+		if(!Site.is_mobile())
+			Site.lightbox = new LightBox( $('a.lightbox'), false, false, true);
 };
 
 
