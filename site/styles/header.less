@@ -60,6 +60,7 @@ nav#main {
   position: absolute;
   top: 0;
   left: calc(~'50% - 600px');
+  cursor: pointer;
 }
 
 nav#main > svg {
@@ -74,7 +75,7 @@ nav#main:hover > svg {
   fill: @color_white;
 }
 
-nav#main > nav {
+nav.mobile_menu {
   position: absolute;
   width: 300px;
   text-align: left;
@@ -90,7 +91,7 @@ nav#main > nav {
   z-index: 1000;
 }
 
-nav#main:hover > nav {
+nav.mobile_menu.show {
   opacity: 1;
   max-height: 500px;
   visibility: visible;

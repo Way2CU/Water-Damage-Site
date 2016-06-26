@@ -55,6 +55,16 @@ Site.on_load = function() {
 		// create lightbox images for articles images
 		if(!Site.is_mobile())
 			Site.lightbox = new LightBox( $('a.lightbox'), false, false, true);
+
+
+    // function for displaying drop down menu on tablets
+    var menu = document.getElementById('main');
+    var drop_menu = document.querySelector('nav.mobile_menu');
+
+    var open_drop_down = function() {
+      drop_menu.classList.toggle('show');
+    }
+    menu.addEventListener('click', open_drop_down, false);
 };
 
 // maxmind geoip script
