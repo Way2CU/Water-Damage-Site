@@ -70,12 +70,12 @@ nav#main > svg {
   transition: all 0.3s;
 }
 
-nav#main:hover > svg {
+nav#main.show {
   background-color: fade(@color_black, 80%);
   fill: @color_white;
 }
 
-nav.mobile_menu {
+nav#main nav.mobile_menu {
   position: absolute;
   width: 300px;
   text-align: left;
@@ -91,7 +91,7 @@ nav.mobile_menu {
   z-index: 1000;
 }
 
-nav.mobile_menu.show {
+nav#main.show nav.mobile_menu {
   opacity: 1;
   max-height: 500px;
   visibility: visible;
