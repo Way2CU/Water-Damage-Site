@@ -27,6 +27,14 @@
             cms:eval="text_id"
             />
         </cms:mobile>
+        <a
+          href="'tel:'.urlencode(Language::getText('phone'))"
+          cms:eval="href"
+          class="phone"
+          >
+          <cms:svg file="site-sprite.svg" symbol="phone"/>
+          <cms:text constant="phone"/>
+        </a>
     </article>
   </cms:if>
 
@@ -53,6 +61,14 @@
             cms:eval="text_id"
             />
         </cms:mobile>
+        <a
+          href="'tel:'.urlencode(Language::getText('phone'))"
+          cms:eval="href"
+          class="phone"
+          >
+          <cms:svg file="site-sprite.svg" symbol="phone"/>
+          <cms:text constant="phone"/>
+        </a>
     </article>
   </cms:if>
 </document>

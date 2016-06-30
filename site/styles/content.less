@@ -48,13 +48,17 @@ section#intro article p {
 
 section#intro ul {
   display: block;
-  width: 250px;
+  width: 500px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.1em;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 0px 30px;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+section#intro ul li {
+  padding-bottom: 0.5em;
 }
 
 section#about article.about,
@@ -257,6 +261,32 @@ section.articles article a.lightbox img {
   display: block;
   border: 2px solid @color_white;
   transition: all 0.3s;
+}
+
+section.articles article a.phone {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: @color_white;
+  font-size: 1.2em;
+  font-weight: 700;
+  border: 1px solid @color_white;
+  background-color: @color_purple;
+  transition: all 0.3s;
+}
+
+section.articles article a.phone:hover {
+  background-color: lighten(@color_purple, 10%);
+}
+
+section.articles article a.phone svg {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0em 0.2em;
+  width: 2em;
+  height: 2em;
+  fill: @color_white;
 }
 
 /**
