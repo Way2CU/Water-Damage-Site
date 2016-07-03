@@ -14,19 +14,12 @@ footer {
   color: @color_white;
 }
 
-footer p {
-  text-align: center;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  color: @color_white;
-}
-
 footer div.top {
   background-image: url(../images/mobile-footer.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% auto;
-  min-height: 400px;
+  min-height: 500px;
   position: relative;
 }
 
@@ -35,6 +28,15 @@ footer div.top h2 {
   color: @color_purple;
 }
 
+footer div.top p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  background-color: @color_black;
+  color: @color_white;
+}
 
 footer div.copyright {
   display: inline-block;
